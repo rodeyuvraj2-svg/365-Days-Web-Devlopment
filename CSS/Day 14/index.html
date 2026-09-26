@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+
+        /* Class Selector */
+        .red{
+            color: red;
+        }
+
+        /* Id selector */
+        #green{
+            color: greenyellow;
+        }
+
+        /* Child selector */
+        div > p {
+            color:chocolate;
+            background-color: rgb(90, 190, 190);
+        }
+
+        /* Decendant Selector */
+        div p{
+            color: blueviolet;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color: rgb(0, 0, 0);
+        }
+
+        a:active{
+            background-color: brown;
+        }
+
+        a:link{
+            color: chartreuse;
+        }
+
+        a:hover{
+            color: darkblue;
+        }
+
+        p:first-child{
+            color: rgb(255, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>
+            Hey first child
+        </p>
+    </main>
+    <div class="red">
+        Im red class in div
+        <span>
+            <p>A sub class of span which is sub class of div  ----Decendant Selector</p>
+        </span>
+    </div>
+    <div id="green">
+        Im green id in div
+        <br>
+        <p>Im para inside div </p>
+    </div>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <a href="https://www.googlsae.com/" target="_blank">Google</a>
+</body>
+</html>
