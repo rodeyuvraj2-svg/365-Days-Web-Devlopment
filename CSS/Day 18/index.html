@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* The specificity of this is 1 */
+        h1{
+            color:aqua;
+        }
+
+        /* The specificity of this is 10 */        
+        .cred{
+            color: red;
+        }
+
+        /* The specificity of this is 1 + 10 = 11 */
+        h1.cyellow{
+            color: yellow;
+        }
+
+        /* The specificity of this is 10 */
+        .cblue{
+            color:blue;
+        }
+
+        /* The specificity of this is 10 */
+        [data-x="a"]{
+            color: rgb(255, 0, 212);
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cred cblue cyellow" data-x="a">Hey! Today is Tuesday..</h1>
+    </div>
+</body>
+</html>
