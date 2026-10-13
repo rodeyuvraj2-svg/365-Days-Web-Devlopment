@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sizing Units</title>
+    <title>Sizing</title>
     <style>
         * {
             margin: 0;
@@ -12,41 +12,75 @@
         }
 
         .box {
+            box-sizing: border-box;
             border: 2px solid black;
-            /* width: 1533px; */
             width: 80vw;
-            height: 10vh;
             margin: auto;
             background-color: aqua;
+            height: 10vh;
         }
 
         .container {
             box-sizing: border-box;
             border: 2px solid black;
-            /* width: 1533px; */
             width: 80vw;
             height: 80vh;
             margin: 23px auto;
             background-color: aqua;
-            font-size: 18px;
+            min-width: 80vh;
+            font-size: 16px;
         }
 
-        .container p{
-            font-size: 2em;
+        .container>div {
+            font-size: 1em;
+            width: 50%;
+            border: 2px solid blue;
+        }
+
+        .container>div>div {
+            font-size: 1em;
+            width: 50%;
+            border: 2px solid blue;
+        }
+
+        .mycont {
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: red;
+            font-size: 22px;
+            width: 80vw;
         }
     </style>
 </head>
 
 <body>
-    <div class="box">This is a box</div>
+    <div class="box">
+        This is a Box.
+    </div>
     <div class="container">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quod facilis beatae. Soluta
-            harum fuga, quae nostrum neque, esse autem vitae ipsam maiores officia dolorem reiciendis iure sequi quidem at
-            quaerat molestiae sapiente quo, dignissimos temporibus deleniti unde. Ab, incidunt aspernatur cumque
-            repellendus, asperiores tempora earum harum quisquam assumenda reiciendis consequatur dolor, corporis omnis
-            provident minus!
-        </p>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, a tenetur provident aspernatur
+            reiciendis
+            expedita enim perferendis, minima deserunt quos, amet adipisci nobis accusamus consectetur earum placeat
+            fugit
+            ut dolor. Nobis at animi repellat laborum, neque earum, velit alias hic iste consequatur magni nostrum harum
+            facilis placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo excepturi earum consectetur.
+            Id nobis debitis quod, accusamus beatae aliquid cumque necessitatibus earum, accusantium molestias eum
+            voluptas exercitationem. Impedit, vel ipsa!lorem78
+            provident perferendis? Libero soluta maiores dolorum laboriosam. Expedita, magni!
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque provident quisquam vero deleniti
+                voluptate laboriosam. Assumenda, atque minus! Sunt assumenda excepturi dolore sapiente perferendis id
+                libero a voluptates odit numquam consectetur officiis enim recusandae unde quod nam aperiam, ex
+                deleniti, sint nihil rem, eum voluptatibus aut. Reprehenderit, at accusantium consectetur dolor possimus
+                ex facilis assumenda nemo est, culpa, quae expedita alias autem. Soluta eaque suscipit facere voluptate
+                possimus, ea maiores velit corrupti? Obcaecati, praesentium. Consequuntur explicabo eum sapiente?
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        Im another container
     </div>
 </body>
 
